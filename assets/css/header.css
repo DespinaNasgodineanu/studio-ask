@@ -1,0 +1,128 @@
+:root {
+    --fc-primary: rgba(61, 61, 63, 1);
+    --fc-neutral: rgba(244, 245, 246, 1);
+    --fc-1-: normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+    --container-corvid-background-color: rgba(var(--bg,var(--color_11)),var(--alpha-bg,1));
+    --bg: var(--color_12);
+    --color_11:rgb(255,255,255);
+    --color_12:rgb(244,245,246);
+    --color_14: rgb(164, 164, 172);
+    --alpha-bg:0;
+}
+
+nav {
+    width: auto;
+    min-width: 0px;
+    max-width: 99999px;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    right: 0;
+    left: 0;
+    position:absolute;
+    font: var(--fnt,var(--fc-1-));
+    color: var(--fc-neutral);
+    right: 0;
+    left: 0;
+    z-index: 100;
+    box-sizing: border-box;
+}
+nav ul{
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+   
+}
+.nav-secound-list{
+    display: flex;
+}
+.nav-list li{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.nav-list li.active{
+    opacity: 0.5;
+}
+.nav-list a{
+    color: var(--fc-neutral);
+    text-decoration: none;
+    list-style-type: none;
+    transition: all 0.3s linear;
+}
+.nav-list a:hover{
+    color: var(--color_14);
+}
+.nav-secound-list button{
+    background-color: transparent;
+    border: none; 
+    color: var(--fc-neutral);
+    font-size: 0.9em;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+nav[data-full="true"] .nav-full {
+    transform: translateY(0);
+    z-index: 100;
+}
+.nav-full {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--fc-neutral);
+    background:rgba(244, 245, 246, 0.97);
+    transition: all 0.5s ease-out;
+    transform: translateY(-100%); 
+}
+
+.nav-full-list a,
+.nav-full-list button{
+    color:  var(--fc-primary);
+}
+.svg-logo{
+    width: 125px;
+    height: 125px;
+    justify-content: center;
+    fill: var(--fc-primary);
+    margin-left: 50px;
+    box-sizing: border-box;
+}
+
+@media  screen and (max-width:1000px) {
+    .nav-list li{
+        display: none;
+    }
+    .svg-logo{
+        width: auto;
+        max-width: 80px;
+        height: auto;
+        max-width: 80px;
+    }
+}
+@media  screen and (max-width:1000px){
+    nav{
+        height: 80px;
+    }
+}

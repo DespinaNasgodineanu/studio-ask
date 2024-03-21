@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Lato&family=Wix+Madefor+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+:root{
+    --fc-color1: rgba(238, 240, 218, 0.815);
+    --fc-neutral: rgba(244, 245, 246, 1);
+}
+body{
+    background-color: var(--fc-neutral);
+    height: 0;
+}
+
+.container1{
+    padding:7.29vw 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 100px; 
+}
+.container1 h1{
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    font-size: calc(30px + (84 - 30) * ((100vw - var(--minViewportSize) * 1px) / (var(--maxViewportSize) - var(--minViewportSize))));
+}
+.container-bookNow-img{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px 7.15vw 20px;
+}
+.div_img1, .div_img2{
+    object-fit: cover;
+    object-position: center;
+    height: auto;
+    width: auto;
+}
+.div_img1 img, .div_img2 img{
+    max-width: 550px;
+    min-width: 0px;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.div_img1, .div_img2{
+    border: 0.1px solid transparent;
+    background-color: white;
+    padding: 0px;
+    max-width: 550px;
+    height: auto;
+}
+.img1-img img, .img2-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 616/413;
+    cursor: pointer;
+}
+.img1-img img:hover, .img2-img img:hover{
+    filter: brightness(70%);
+}
+.div-img1-text, .div-img2-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    font-family: 'Cormorant', serif;
+    font-weight: 100;
+}
+.container-bookNow-img h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.container-bookNow-img p{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.container-bookNow-img button{
+    background-color: #3d3d3f;
+    padding: 4px 16px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 17px;
+    border: none;
+}
+main{
+    overflow: hidden;
+}
+
+@media  screen and (max-width:500px){
+    .container1{
+        grid-template-rows: repeat(2, minmax(240px, 616px))!important;
+        margin-top: 80px;
+        padding-top: 0px;
+    }
+    .div_img1{
+        margin-right: 0px;
+    }
+    .container-bookNow-img{
+        flex-direction: column;
+        padding: 0px 20px 30px 20px;
+        gap: 30px;
+    }
+
+}
+@media  screen and (max-width:1200px){
+    .container1{
+        flex-direction: row;
+    }
+    .div_img1{
+        margin-right: 0px;
+    }
+
+}

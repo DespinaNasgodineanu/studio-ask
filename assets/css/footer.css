@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+:root{
+    --fc-1-: normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+    --fc-neutral: rgba(244, 245, 246, 1);
+    --fc-primary: rgba(61, 61, 63, 1);
+    --fc-1-: normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+}
+footer{
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    height: 385px;
+    color:hsla(240, 1%, 19%, 0.8);;
+}
+.footer-container{
+    display: flex;
+}
+.line-footer{
+    background-color: black;
+    height: 1px;
+    width:calc(100% - 80px);
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+}
+.footer-grid{
+    position: relative;
+    height: auto;
+    min-height: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:  1fr;
+    justify-content: stretch;
+    grid-row: inherit;
+    padding-right: 40px;
+    padding-left: 20px;
+    margin-top:60px ;
+}
+.map-footer{
+    text-orientation: initial;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    margin-left: 40px;
+    text-align: end;
+    padding-bottom: 65px;
+    color: rgba(61,61,63, 0.4);
+}
+.ul-1-footer{
+    list-style-type: none;  
+}
+.ul-1-footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 43px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1;
+    color: rgba(21, 21, 22, 0.8);
+}
+.ul-1-footer a:hover{
+    color:  #767679cc;;
+}
+.adress-footer{
+    position: relative;
+    text-align: center;
+    padding-right: 50px;
+    color: var(--fc-primary);
+}
+.adress-footer p{
+    font-size: 1.1em;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 0.99;
+}
+.adress-footer a{
+    font: var(--fnt,var(--fc-1-));
+    font-size: 0.96em;
+    color: var(--fc-primary);
+    list-style-type: none;
+    text-decoration: none;
+    font-family:'Work Sans', sans-serif;
+}
+.bookNow-footer{
+    text-align: right;
+}
+.bookNow-footer button{
+    text-transform: uppercase;
+    color: rgb(61,61,63,);
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 360px;
+    padding: 90px 43px;
+    font-size: 23px;
+    font-family: 'Work Sans', sans-serif;
+    cursor: pointer;
+}
+.bookNow-footer button:hover{
+    background-color:rgb(61,61,63); 
+    color:rgba(244, 245, 246);
+}
+.linkElement-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-right: 50px;
+}
+.linkElement-footer a{
+    color: rgba(61,61,63, 1);
+    border-radius: 45px ;
+    border: 1px solid rgba(61,61,63, 0.4);
+    padding: 6px 8.5px;
+    font-size: 1.3em;
+}
+.linkElement-footer a:hover{
+    border: 1px solid rgba(61,61,63, 1);
+}
+.facebook a{
+    font-size: 1.1em;
+    padding:8.2px 12px;
+}
+.privancy-policy{
+    text-align: center;
+    margin-top:35px;
+}
+.privancy-policy a{
+    text-decoration: none;
+    font-size: 13.5px;
+    font-family:  'Work Sans', sans-serif;
+    line-height: 1;
+    color:var(--fc-primary);
+}
+.privancy-policy p{
+    text-decoration: none;
+    font-size: 13.5px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.2;
+    color:var(--fc-primary);
+}
+@media  screen and (max-width:1200px) {
+    footer{
+        width: 100%;
+        height: 340px;
+    }
+    .ul-1-footer a{
+        font-size: 33px;
+    }
+    .adress-footer p{
+        font-size: 0.9em;
+    }
+    .bookNow-footer button{
+        font-size: 18px;
+        padding: 70px 33px;
+    }
+    .privancy-policy a,p{
+        font-size: 13px;
+    }
+}
+@media  screen and (max-width:730px) {
+    .line-footer{
+        width:calc(100% - 40px);
+    }
+    footer{
+        width: 100%;
+        height: 480px;
+        display: grid;
+    }
+    .footer-grid{
+        padding: 0px 20px;
+        bottom: 25px;
+        height: 85%;
+    }
+    .ul-1-footer{
+        align-self: stretch;
+        margin-top: 100px;
+    }
+    .ul-1-footer a{
+        font-size: 25px;
+    }
+    .adress-footer,.linkElement-footer{
+        padding: 0px;
+    }
+    .adress-footer p{
+        font-size: 0.9em;
+    }
+    .bookNow-footer{
+        margin-top: 100px;
+    }
+    .bookNow-footer button{
+        font-size: 13.5px;
+        padding: 45px 20px;
+    }
+    .privancy-policy a,p{
+        font-size: 13px;
+        bottom: 10px;
+    }
+    .privancy-policy{
+        margin-top: 10px;
+        bottom: 10px;
+    }
+    .map-footer{
+        display: none;
+    }
+    .instagram a{
+        padding: 7px 10px;
+    }
+    .facebook a{
+        padding: 10px 14.3px 8px 14.3px;
+    }
+}
