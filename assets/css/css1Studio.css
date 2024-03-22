@@ -248,16 +248,16 @@
 }
 
 .fw-img1 {
-    background-image: url("./img/_J4A8036.webp");
+    background-image: url("/img/J4A8036.webp");
 }
 .fw-img2 {
-    background-image: url("./img/K0A7061.webp");
+    background-image: url("/img/K0A7061.webp");
 }
 .fw-img3 {
-    background-image: url(/img/_K0A7111.webp);
+    background-image: url("/img/K0A7111.webp");
 }
 .fw-img4 {
-    background-image: url(/img/_K0A7146.webp);
+    background-image: url("/img/K0A7146.webp");
 }
 .fw-img:hover {
     transform: scale(1.15);
