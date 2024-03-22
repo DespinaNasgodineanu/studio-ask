@@ -110,7 +110,7 @@
     background-image: url(/img/_K0A7111.webp);
 }
 .s2_row2_img2{
-    background-image: url(/img/_K0A7061.webp);
+    background-image: url('./img/K0A7061.webp');
     
 }
 .s2_col_small1{
@@ -143,7 +143,6 @@
 
 /* Section 4 */
 .s4_p{
-    margin-top: ;
     font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
     color: var(--fc-primary);
