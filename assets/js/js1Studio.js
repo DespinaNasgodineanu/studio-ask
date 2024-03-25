@@ -1,4 +1,4 @@
-const generateFullImg = (source) => {
+const generateFullImg1 = (source) => {
    const body = document.querySelector("body");
    const wrapper = document.createElement("div");
    const img = document.createElement("img");
@@ -15,12 +15,12 @@ const generateFullImg = (source) => {
    body.prepend(wrapper)
 }
 
-const images = document.querySelectorAll(".full-img");
-images.forEach(image => {
+const images1 = document.querySelectorAll(".full-img");
+images1.forEach(image => {
    image.addEventListener("click", (e) => {
       const img = e.target;
       const src = img.src;
 
-      generateFullImg(src)
+      generateFullImg1(src)
    })
 })

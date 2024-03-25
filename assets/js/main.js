@@ -39,3 +39,12 @@ const generateFullImg = (source) => {
        generateFullImg(src)
     })
  })
+
+///Menu button
+const btnMenu = document.querySelector('.drop_btn');
+const hiddenList = document.querySelector(".nav_mobile--ul");
+
+btnMenu.addEventListener("click", function(e){
+    e.preventDefault();
+    hiddenList.classList.toggle('nav_hidden')
+})

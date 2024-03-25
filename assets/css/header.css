@@ -63,11 +63,12 @@ nav ul{
 .nav-list li.active{
     opacity: 0.5;
 }
-.nav-list a{
+.nav-list a , .nav_mobile--ul a{
     color: var(--fc-neutral);
     text-decoration: none;
     list-style-type: none;
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 .nav-list a:hover{
     color: var(--color_14);
@@ -89,6 +90,7 @@ nav[data-full="true"] .nav-full {
     width: 100%;
     height: 100%;
     position: absolute;
+    text-align: center;
     left: 0;
     top: 0;
     color: var(--fc-neutral);
@@ -106,12 +108,52 @@ nav[data-full="true"] .nav-full {
     height: 125px;
     justify-content: center;
     fill: var(--fc-primary);
-    margin-left: 50px;
     box-sizing: border-box;
+
+}
+.nav_mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 1.7rem;
+    right: 2.7rem;
+    z-index: 100;
+}
+.drop_btn{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: var(--fc-primary);
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
-@media  screen and (max-width:1000px) {
-    .nav-list li{
+.nav_mobile--ul{
+    border: 1px solid var(--fc-primary);
+    border-radius: 20px;
+    position: absolute;
+    top: 2.5rem;
+    display:flex;
+    flex-direction:column ;
+    align-items: flex-start;
+    color: black;
+    text-decoration: none; 
+    z-index: 100; 
+}
+.nav_hidden{
+    display: none;
+}
+.nav_mobile--ul li{
+    text-decoration: none;
+    list-style: none;  
+}
+.nav_mobile--ul a{
+    color: var(--fc-primary);
+}
+
+@media  screen and (max-width:710px) {
+    .nav-full-list , .nav-default{
         display: none;
     }
     .svg-logo{
@@ -119,7 +161,12 @@ nav[data-full="true"] .nav-full {
         max-width: 80px;
         height: auto;
         max-width: 80px;
+        margin-left: 2em;
     }
+    .drop_btn{
+        display: block;
+    }
+
 }
 @media  screen and (max-width:1000px){
     nav{
